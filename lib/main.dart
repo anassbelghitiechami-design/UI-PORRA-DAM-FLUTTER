@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'features/principal/pantalla_principal.dart';
+import 'features/bienvenida/bienvenida.dart';
 
 void main() {
   runApp(const PorraDamApp());
@@ -15,7 +15,7 @@ class PorraDamApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
       ),
-      home: const PantallaPrincipal(),
+      home: const PantallaBienvenida(),
     );
   }
 }
