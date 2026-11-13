@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 
-// Único Scaffold compartido (appBar + barra inferior) del que cuelgan
-// las cuatro pestañas. Ninguna pestaña monta su propio Scaffold.
 class PantallaPrincipal extends StatefulWidget {
   const PantallaPrincipal({super.key});
 
@@ -27,7 +25,6 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_titulos[_pestana]),
-        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
       body: _pestanas[_pestana],
       bottomNavigationBar: NavigationBar(
