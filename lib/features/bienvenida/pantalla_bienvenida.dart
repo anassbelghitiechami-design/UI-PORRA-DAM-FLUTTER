@@ -10,10 +10,7 @@ class PantallaBienvenida extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          // Fondo del estadio
           Image.asset('assets/images/fondo_pantalla_hd.webp', fit: BoxFit.cover),
-
-          // Degradado: transparente arriba, oscuro abajo
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -23,8 +20,6 @@ class PantallaBienvenida extends StatelessWidget {
               ),
             ),
           ),
-
-          // Título, texto y tarjeta con el formulario, pegados abajo
           Padding(
             padding: const EdgeInsets.all(24),
             child: Column(
@@ -45,8 +40,6 @@ class PantallaBienvenida extends StatelessWidget {
                   style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
                 const SizedBox(height: 24),
-
-                // Tarjeta blanca con el formulario
                 Container(
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
