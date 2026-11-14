@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class PantallaPrincipal extends StatefulWidget {
   const PantallaPrincipal({super.key});
 
@@ -10,8 +9,6 @@ class PantallaPrincipal extends StatefulWidget {
 
 class _PantallaPrincipalState extends State<PantallaPrincipal> {
   int _pestana = 0;
-
-  static const _titulos = ['Jornada 1', 'Resultados', 'Clasificación', 'Perfil'];
 
   static const _pestanas = [
     Center(child: Text('Jornada')),
@@ -24,7 +21,32 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_titulos[_pestana]),
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        leading: const Icon(Icons.menu),
+        title: const Text(
+          'Porra DAM',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        centerTitle: true,
+        actions: [
+          Container(
+            margin: const EdgeInsets.only(right: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+            decoration: BoxDecoration(
+              color: Colors.green.shade100,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: const Text(
+              '38 pts',
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.bold,
+                color: Colors.green,
+              ),
+            ),
+          ),
+        ],
       ),
       body: _pestanas[_pestana],
       bottomNavigationBar: NavigationBar(
