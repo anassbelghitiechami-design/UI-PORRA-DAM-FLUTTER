@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../clasificacion/clasificacion.dart';
 import '../jornada/jornada.dart';
+import '../perfil/perfil.dart';
 import '../resultados/resultados.dart';
 
 class PantallaPrincipal extends StatefulWidget {
@@ -18,7 +19,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
     PantallaJornada(),
     PantallaResultados(),
     PantallaClasificacion(),
-    Center(child: Text('Perfil')),
+    PantallaPerfil(),
   ];
 
   @override
