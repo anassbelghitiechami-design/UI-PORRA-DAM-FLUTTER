@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../jornada/jornada.dart';
+import '../resultados/resultados.dart';
 
 class PantallaPrincipal extends StatefulWidget {
   const PantallaPrincipal({super.key});
@@ -14,7 +15,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
 
   static const _pestanas = [
     PantallaJornada(),
-    Center(child: Text('Resultados')),
+    PantallaResultados(),
     Center(child: Text('Clasificación')),
     Center(child: Text('Perfil')),
   ];
