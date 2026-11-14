@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../clasificacion/clasificacion.dart';
 import '../jornada/jornada.dart';
 import '../resultados/resultados.dart';
 
@@ -16,7 +17,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
   static const _pestanas = [
     PantallaJornada(),
     PantallaResultados(),
-    Center(child: Text('Clasificación')),
+    PantallaClasificacion(),
     Center(child: Text('Perfil')),
   ];
 
